@@ -1,0 +1,9 @@
+EC2.class
+WorkersQueueListener.class
+AppsQueueListener.class
+S3.class
+Sqs.class
+Manager.class
+MainManager.class
+ResultsUploaderPerApp.class
+TasksDistributer.class

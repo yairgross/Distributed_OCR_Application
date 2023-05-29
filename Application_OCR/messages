@@ -1,0 +1,35 @@
+manager to app msg format:
+app:<appName>\n
+bucket-name:<bucketName>\n
+
+app to manager format:
+name:<appName>\n
+queue-name:<managerToAppQueueName>\n
+input-file-bucket:<inputFileBucketName>\n
+input-file-key:<key>\n
+
+workers to manager format:
+name:<appName>\n
+imageUrl:<url>\n
+text:<text> or error:<error>
+
+manager to workers format:
+app:<appName>\n
+url:<imgURL>
+
+result file format:
+<linkToImage>\t<text>\n
+
+termination msg format:
+terminate
+
+name of worker:
+worker-<numOfWorkers>
+
+finish message format:
+app:<appName>\n
+finished
+
+result in s3:
+url:<imgurl>\t
+text:<text>
